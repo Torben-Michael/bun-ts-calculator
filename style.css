@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.calculator-container{
+    display: grid;
+    grid-template-areas: 
+      "display display display display"
+      "btnC btnBackspace btnMultiply btnDivide"
+      "btn7 btn8 btn9 btnMinus"
+      "btn4 btn5 btn6 btnPlus"
+      "btn1 btn2 btn3 buttonEqual"
+      "btn0 btn0 btnDot buttonEqual"; 
+      
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 Spalten */
+    grid-template-rows: 60px 60px 60px 60px 60px; /* Zeilen für Display und Tasten */
+    gap: 10px; /* Abstand zwischen den Tasten */
+    width: 220px;
+    margin: 50px auto; /* Zentriert den Taschenrechner */
+}
